@@ -6,26 +6,13 @@ function generateHTML(data) {
 <title>Page</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/style.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  <style>
-      .ul{
-          list-style-type:none;
-          right: 0;
-          position: relative;
-      }
-      li{
-          float: left;
-          margin: 20px;
-      }
-      .cardbody{
-          width: 200px;
-          border-radius: 10px;
-          box-shadow: 5px 10px 8px #888888;
-      }
-  </style>
-<div class="jumbotron" style="background: gray" >
+  
+<div class="jumbotron">
   <h1 class="text-center" >Company Employees</h1>
   </div>
   <div class='container'>
@@ -61,7 +48,7 @@ function makeManagerCard(x) {
   <li>
   <div class="col-md-3">
   <div class="card cardbody">
-    <div class="card-header" style="background: #5178ED">
+    <div class="card-header">
                  ${x.name}<br>
                  <div class="fa fa-edit">${x.getRole()}</div>
                 </div>
@@ -95,7 +82,7 @@ function makeEngineerCard(x) {
       <li>
       <div class="col-md-3">
                   <div class="card cardbody">
-                    <div class="card-header" style="background: #5178ED">
+                    <div class="card-header">
                                  ${x.name}<br>
                                 <div><i class="fa fa-book"></i> ${x.getRole()}</div><i class="">
                                 </div>
